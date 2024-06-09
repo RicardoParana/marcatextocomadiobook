@@ -1,0 +1,1817 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  padding: 20px;
+  background-color: #9371c7;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+nav {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+nav img {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  border-radius: 30px;
+}
+
+nav h1 {
+  margin-top: 4rem;
+  color: #e0fd05;
+  background-color: #27eb11ac;
+  text-align: center;
+  max-width: 90%;
+  margin: 0 auto;
+  font-size: 5vw;
+  border: 2% solid #0bf1f5;
+  border-radius: 30px;
+  padding: 2%;
+  white-space: nowrap;
+}
+
+#inputText {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  background-color: white;
+  color: rgb(12, 12, 13);
+  font-family: 'Roboto Condensed', sans-serif;
+  font-size: 2rem; /* Ajustei o tamanho da fonte para 2rem */
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding: 18px 5px 0;
+  border-radius: 10px;
+  border-bottom: none;
+  height: 3rem;
+}
+
+#inputText::placeholder {
+  color: #c79571;
+  text-align: center;
+  line-height: 1.5rem;
+}
+
+.menu-superior {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2rem;
+}
+
+#button {
+  font-size: 1rem;
+  width: 150px;
+  height: 65px;
+  display: flex; /* Adicionando display flex para alinhar itens */
+  align-items: center;
+  justify-content: center;
+  background-color: #007bff; /* Cor de fundo */
+  color: #fff; /* Cor do texto */
+  border-radius: 50px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1), 0 4px 8px rgba(0, 0, 0, 0.1);
+  border: 1px solid yellow;
+  padding: 20px 30px; /* Espaçamento interno */
+  cursor: pointer; /* Cursor ao passar por cima */
+  margin-right: 1rem;
+}
+
+#button:hover {
+  background-color: #0056b3; 
+  color: yellow;
+  border: 1px solid white;
+}
+
+
+.format-text {
+  width: 155px;
+  height: 64px;
+  border-radius: 20px;
+  border: none;
+  background-color: #ADFF00;
+  box-shadow: 5px 5px 2px 2px rgba(0, 0, 0, 0.486);
+  color: #000;
+  font-size: 1em;
+  font-weight: 700;
+}
+
+.format-text:hover {
+  background-color: #FFFF51;
+  color: #035bf3;
+  border: 3px solid #99FF99;
+  cursor: pointer;
+  font-size: .9em;
+}
+
+select{
+  margin-bottom: 2rem;
+}
+    div.fixed{
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    
+    .menu-completo .fixed{
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .fixed ion-icon{
+      padding-top: 10px;
+      font-size: 2.5rem;
+    }
+    
+
+    .btn-theme{
+      width: 20%;
+      height: 20%;
+      margin-left: .5rem;
+      margin-right: .5rem;
+      padding: .5rem;
+      text-align: center;
+      background-color: #121212;
+      border-radius: 8px;
+      border: none;
+      color: white;
+      font-size: 1em;
+      font-weight: 700;
+      box-shadow: 5px 5px 2px 1px rgba(0, 0, 0, 0.486);
+      cursor: pointer;
+      transition: 0.5s ease-in-out;
+    }
+    
+    .btn-theme:hover{
+      font-size: 1em;
+      background-color:#6c6363 ;
+      color: #3b2f2f;
+    }
+    
+    #copyButton{
+      width: 20%;
+      height: 20%;
+      margin-left: .5rem;
+      margin-right: .5rem;
+      padding: .5rem;
+      text-align: center;
+      background-color: #fff;
+      border-radius: 8px;
+      border: 2px solid blue;
+      color: #060eeb;
+      font-size: 1em;
+      font-weight: 700;
+      box-shadow: 5px 5px 2px 1px rgba(0, 0, 0, 0.486);
+      cursor: pointer;
+      transition: 0.5s ease-in-out;
+
+    }
+    
+    #copyButton:hover{
+
+      font-size: 1em;
+      background-color: blue;
+      color: #fff;
+      border: 2px solid white;
+    }
+
+    #doc{
+      width: 20%;
+      height: 20%;
+      margin-left: .5rem;
+      margin-right: .5rem;
+      padding: .5rem;
+      text-align: center;
+      background-color: #fff;
+      border-radius: 8px;
+      border: 2px solid blue;
+      color: #060eeb;
+      font-size: 1em;
+      font-weight: 700;
+      box-shadow: 5px 5px 2px 1px rgba(0, 0, 0, 0.486);
+      cursor: pointer;
+      transition: 0.5s ease-in-out;
+
+    }
+    
+    #doc:hover{
+
+      font-size: 1em;
+      background-color: rgb(95, 95, 114);
+      color: #fff;
+      border: 2px solid white;
+    }
+
+    
+    .botao-reset{
+      width: 20%;
+      height: 20%;
+      margin-left: .5rem;
+      margin-right: .5rem;
+      padding: .5rem;
+      text-align: center;
+      background-color: #000;
+      border-radius: 50%;
+      border: 2px solid blue;
+      color: #060eeb;
+      font-size: 1em;
+      font-weight: 700;
+      box-shadow: 5px 5px 2px 1px rgba(0, 0, 0, 0.486);
+      cursor: pointer;
+      transition: 0.5s ease-in-out;
+
+    }
+    
+    .botao-reset:hover{
+
+      font-size: 1em;
+      background-color: red;
+      color: #fff;
+      border: 2px solid white;
+    }
+ #outputText {
+  width:90%;
+  max-width: 2000px;
+  font-size: 1em;
+  font-family: inherit;
+  margin: 0;
+  padding: 5rem; /* Alterado o padding para 2rem */
+  padding-left: 10rem;
+  border: 0;
+  outline: 0;
+  background-color: white;
+  white-space: pre-wrap;
+  height: auto; /* Altura agora é ajustada automaticamente */
+  word-wrap: break-word;
+  resize: vertical;
+} 
+
+
+.botao-posicionado {
+  display: block; /* Exibe o botão apenas em dispositivos móveis */
+  border: 3px solid pink;
+  margin: auto;
+}
+.btnmenudropdown{
+  display: none;
+
+}
+.card1,
+.card2,
+.card3{
+  display: none;
+}
+
+.menudropdow{
+  width: 20px;
+  /* position: relative; */
+  display:inline-block;
+
+}
+.btnmenudropdown{
+  width: 100%;
+  max-width: 75px;
+  background-color:#2505f8 ;
+  color: #f0f1f9;
+  display: flex;
+  flex-direction: row;
+  padding: 20px;
+  text-align: center;
+  font-size: .8em;
+  font-weight: 700;
+  border-radius: 8px;
+  border:1px solid white;
+    box-shadow: 5px 5px 2px 1px rgba(0, 0, 0, 0.486);
+  /* border-radius:20.5px; */
+
+}
+.botao-posicionado{
+  position: relative;
+  top: 127px;
+  left: 50px;
+}
+
+.menudropdow-conteudo{
+  width: 100px;
+  text-align: center;
+  font-size: 1em;
+  margin-top: 2%;
+  margin-left: -55px;
+  border-radius: 8px;
+  display: none; 
+  position: absolute;
+  background-color: #fff;
+  min-width: 10px;
+  box-shadow: 0px 8px 16px 10px rgba(16, 15, 15, 0.763);
+  z-index: 1;
+}
+
+.menudropdow-conteudo a{
+  color: #000;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.menudropdow-conteudo a:hover{
+  background-color:#ddd;
+  border-radius: 8px;
+}
+
+.mostrarMenuDropdown{
+  display: block;
+}
+
+.menudropdow:hover .btnmenudropdown{
+  background-color: rgb(153, 252, 4);
+  color: #000;
+  border-radius: 20.6px;
+  border-left: 115px;
+  border: solid 2px yellow;
+}
+.card1{
+  width: 80px;
+  height: 80px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  border-radius: 8px;
+ 
+
+}
+.card2{
+  height: 80px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  border-radius: 8px;
+ 
+}
+
+.card-text{
+  color: #000;
+  
+  font-size: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+
+footer div{
+  display: flex;
+  flex-direction: column;
+}
+footer h2{
+  font-size: 30px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+
+.endereco span{
+  font-family: 'Roboto',sans-serif;
+  color:#5bf303 ;
+  font-size: 40px;
+  font-weight: 600;
+  font-style: italic;
+}
+
+.endereco .email {
+  text-decoration: none;
+  color: red;
+  margin-left: 20px;
+  font-family: 'Roboto',sans-serif;
+  font-size: 40px;
+  font-weight: 600;
+}
+
+  /* =======Dark-Theme======== */
+.Dark-Theme
+.highlight-yellow { 
+  color:#FFDEDE;   
+  font-size: 1em;
+  font-family: inherit;
+  font-weight:inherit ;
+  font-style: inherit;
+  line-height: 1.4em;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  white-space: pre;
+  overflow-wrap: break-word;
+  hyphens: auto;
+  resize: vertical;
+  
+ }
+
+ .Dark-Theme
+ .highlight-green { 
+    color:#ABC9FF;
+    font-size: 1em;
+    font-family: inherit;
+    font-weight:inherit ;
+    font-style: inherit;
+    line-height: 1.4em;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    white-space: pre;
+    overflow-wrap: break-word;
+    hyphens: auto;
+    resize: vertical;
+  
+  }
+  .Dark-Theme
+  .highlight-red {
+     color: #EB4747;
+     /* border-radius: 100px;  */
+     font-size: 1em;
+    font-family: inherit;
+    font-weight:inherit ;
+    font-style: inherit;
+    line-height: 1.4em;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    white-space: pre;
+    overflow-wrap: break-word;
+    hyphens: auto;
+    resize: vertical;
+    
+  }
+
+  .Dark-Theme 
+  .highlight-gray{
+    background-color: rgb(201, 194, 194);
+    color: rgb(13, 17, 23);
+    font-size: 1em;
+    font-family: inherit;
+    font-weight: inherit;
+    font-style: inherit;
+    margin: 0;
+    padding: 0.10%;
+    border: 0;
+    outline: 0;
+    white-space: pre;
+    overflow-wrap: break-word;
+    hyphens: auto;
+    resize: vertical;
+  }
+
+ 
+  .Dark-Theme
+  #outputText {
+    text-align:inherit;
+    width:95%;
+    max-width: 2000px;
+    font-size: 1em;
+    font-family: inherit;
+    margin: 0;
+    padding: 5rem; /* Alterado o padding para 2rem */
+    margin-left: 2rem;
+    border: 0;
+    outline: 0;
+    background-color:rgb(13, 17, 23);   
+    white-space: pre-wrap;
+    height: auto; /* Altura agora é ajustada automaticamente */
+    word-wrap: break-word;
+    resize: vertical;
+   
+  }  
+/* botoes======== */
+     .Dark-Theme
+    .btn-theme{
+      padding: 6px;
+      background-color:rgb(13, 17, 23);
+      border-radius: 8px;
+      border: none;
+      color:rgb(225, 231, 238);
+       font-size: 1em;
+      font-weight: 700;
+      box-shadow: 5px 5px 2px 2px rgba(0, 0, 0, 0.486);
+      cursor: pointer;
+    }
+    
+    .Dark-Theme
+    .btn-theme:hover{
+      padding: 5px;
+      background-color:rgb(225, 231, 238);
+      border-radius: 8px;
+      border: none;
+      color:rgb(13, 17, 23);
+       font-size: 1em;
+      font-weight: 700;
+      box-shadow: 5px 5px 2px 2px rgba(0, 0, 0, 0.486);
+      cursor: pointer;
+    } 
+    /* botoes */
+  /*=======-Dark-Theme=========  */
+
+
+
+  /* =======Light-Office ========*/
+  .Light-Office
+  .highlight-yellow {
+    background-color:#FFFDA2;
+    color:#525FE1;
+     font-size: 1em;
+    font-family: inherit;
+    font-weight:inherit ;
+    font-style: inherit;
+    line-height: 1.4em;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    white-space: pre;
+    overflow-wrap: break-word;
+    hyphens: auto;
+    resize: vertical;
+     }
+
+  .Light-Office
+  .highlight-green { 
+    background-color: #BAFFB4; 
+    color: #525FE1;
+     font-size: 1em;
+    font-family: inherit;
+    font-weight:inherit ;
+    font-style: inherit;
+    line-height: 1.4em;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+     white-space: pre; 
+    overflow-wrap: break-word;
+    hyphens: auto;
+    resize: vertical;
+   
+  }
+  .Light-Office .highlight-red {
+    background-color: #FFA1F5;
+    color:#525FE1;
+     font-size: 1em;
+    font-family: inherit;
+    font-weight: inherit;
+    font-style: inherit;
+    line-height: 1.4em;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    white-space: pre; /* Corrigido de 'pre-wap' para 'pre-wrap' */
+    overflow-wrap: break-word;
+    hyphens: auto;
+    resize: vertical;
+}
+
+  
+  .Light-Office 
+  .highlight-gray{
+    background-color: rgb(201, 194, 194);
+    color: blue;
+     font-size: 1em;
+    font-family: inherit;
+    font-weight:inherit ;
+    font-style: inherit;
+    margin: 0;
+    padding: 0.1%;
+    border: 0;
+    outline: 0;
+    white-space: pre;
+    overflow-wrap: break-word;
+    hyphens: auto;
+    resize: vertical;
+   } 
+
+
+  .Light-Office
+  #outputText {
+    background-color:#fff;
+    width:95%;
+    max-width: 2000px;
+    font-size: 1em;
+    font-family: inherit;
+    margin: 0;
+    padding: 5rem; /* Alterado o padding para 2rem */
+    border-radius: 10px;
+    border: 0;
+    outline: 0;
+    white-space: pre-wrap;
+    height: auto; /* Altura agora é ajustada automaticamente */
+    word-wrap: break-word;
+    resize: vertical;
+  }  
+  .Light-Office
+  .btn-theme{
+  
+    padding: 5px;
+    background-color:#f0f487;
+    border-radius: 8px;
+    border: none;
+    color:blue;
+     font-size: 1em;
+    font-weight: 700;
+    box-shadow: 5px 5px 2px 1px rgba(0, 0, 0, 0.486);
+    cursor: pointer;
+  }
+  .Light-Office
+  .btn-theme:hover{
+    padding: 4px;
+    background-color:blue;
+    color:#f9fca7;
+  }
+ 
+
+
+  /* ======Light-Office======= */
+
+
+  /* ========Dark Office======== */
+ .Dark-Office
+ .highlight-yellow { 
+    color:#FFC54D;   
+     font-size: 1em;
+    font-family: inherit;
+    font-weight:inherit ;
+    font-style: inherit;
+    line-height: 1.4em;
+    margin: 0;
+    padding:0;
+    border: 0;
+    outline: 0;
+    white-space: pre;
+    overflow-wrap: break-word;
+    hyphens: auto;
+    resize: vertical;
+ }
+
+ .Dark-Office
+ .highlight-green { 
+    color:#53BF9D;
+     font-size: 1em;
+    font-family: inherit;
+    font-weight:inherit ;
+    font-style: inherit;
+    line-height: 1.4em;
+    margin: 0;
+    padding: 0px;
+    border: 0;
+    outline: 0;
+    white-space: pre;
+    overflow-wrap: break-word;
+    hyphens: auto;
+    resize: vertical;
+  
+  }
+  .Dark-Office
+  .highlight-red {
+     color:#F94C66;
+      font-size: 1em;
+     font-family: inherit;
+     font-weight:inherit ;
+     font-style: inherit;
+     line-height: 1.4em;
+     margin: 0;
+     padding: 0;
+     border: 0;
+     outline: 0;
+     white-space: pre;
+     overflow-wrap: break-word;
+     hyphens: auto;
+     resize: vertical;
+    
+  }
+
+  .Dark-Office 
+  .highlight-gray{
+    background-color: white;
+    color:rgb(1, 22, 39) ;
+     font-size: 1em;
+    font-family: inherit;
+    font-weight: inherit;
+    font-style: inherit;
+    margin: 0;
+    padding: 0.1%;
+    border: 0;
+    /* border-radius: 2px; */
+    outline: 0;
+    white-space: pre;
+    overflow-wrap: break-word;
+    hyphens: auto;
+    resize: vertical;
+   } 
+  
+   .Dark-Office #outputText {
+    background-color: rgb(1, 22, 39);
+    width:95%;
+    max-width: 2000px;
+    font-size: 1em;
+    font-family: inherit;
+    margin: 0;
+    padding: 5rem; /* Alterado o padding para 2rem */
+    border-radius: 10px;
+    border: 0;
+    outline: 0;
+    white-space: pre-wrap;
+    height: auto; /* Altura agora é ajustada automaticamente */
+    word-wrap: break-word;
+    resize: vertical;
+
+}
+
+
+  .Dark-Office
+      .btn-theme{
+        padding: 6px;
+        background-color:rgb(1, 22, 39);
+        border-radius: 8px;
+        border: none;
+        color: rgb(234, 235, 159);
+        font-size: 16px;
+        font-weight: 700;
+        box-shadow: 5px 5px 2px 1px rgba(0, 0, 0, 0.486);
+        cursor: pointer;
+      }
+      .Dark-Office
+      .btn-theme:hover{
+        padding: 7px;
+        background-color:rgb(234, 235, 159);
+        color:rgb(1, 22, 39);
+
+
+    
+       
+      }
+    
+  /* ======Dark-Office============= */
+
+  /* ======Light-Theme===== */
+  .Light-Theme
+  .highlight-yellow {
+    /* background-color:#FFF6F4 ; */
+    color: inherit;
+     color:#FF7F3F;
+     font-family: inherit;
+     font-size: 1em;
+     font-weight:normal ;
+     line-height: 1.4em;
+     margin: 0;
+     padding: 0;
+     border: 0;
+     background-color: transparent;
+     white-space: pre;
+     overflow-wrap: break-word;
+    hyphens: auto;
+    resize: vertical;
+     }
+
+  .Light-Theme
+  .highlight-green { 
+    color: inherit;
+    color:#89CFFD;
+    font-family: inherit;
+    font-size: 1em;
+    font-weight:inherit ;
+    line-height: 1.4em;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    white-space: pre;
+    overflow-wrap: break-word;
+    hyphens: auto;
+    resize: vertical;
+
+    
+   
+  }
+  .Light-Theme
+  .highlight-red { 
+    color: inherit;
+    color:#F94892;
+    font-family: inherit;
+    font-size: 1em;
+    font-weight:inherit ;
+    line-height: 1.4em;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    text-decoration: underline;
+    /* background-color: transparent; */
+    white-space: pre;
+    overflow-wrap: break-word;
+    hyphens: auto;
+    resize: vertical;
+    
+  }
+
+  .Light-Theme
+  .highlight-gray{
+    /* background-color: rgb(40, 42, 54);
+    color: white; */
+    background-color:rgb(229, 167, 95) ;
+    color:rgb(40, 42, 54) ;
+    font-size: 1em;
+    font-family: inherit;
+    font-weight: inherit;
+    font-style: inherit;
+    line-height: inherit;
+    margin: 0;
+    padding: 0.1%;
+    border: 0;
+    /* border-radius: 2px; */
+    outline: 0;
+    white-space: pre;
+    overflow-wrap: break-word;
+    hyphens: auto;
+    resize: vertical;
+   } 
+
+
+  .Light-Theme
+  #outputText {
+    background-color:rgb(40, 42, 54);
+    width:95%;
+    max-width: 2000px;
+    font-size: 1em;
+    font-style: inherit;
+    font-family: inherit;
+    margin: 0;
+    padding: 5rem; /* Alterado o padding para 2rem */
+    border-radius: 10px;
+    border: 0;
+    outline: 0;
+    white-space: pre-wrap;
+    height: auto; /* Altura agora é ajustada automaticamente */
+    word-wrap: break-word;
+    resize: vertical;
+
+  } 
+
+  .Light-Theme
+  .btn-theme{
+    padding: 6px;
+  }
+
+  .Light-Theme
+  .btn-theme:hover{
+    padding: 7px;
+  }
+
+
+
+
+  /* ========Light-Theme======== */
+  
+
+  /* ===Writing-Theme========= */
+  .Writing-Theme
+  .highlight-yellow {
+     color: inherit;
+     color:#8983F3;
+     font-family: inherit;
+     font-size: 1em;
+     font-weight: inherit;
+     font-style: inherit;
+     line-height: 1.4em;
+     margin: 0;
+     padding: 0;
+     border: 0;
+     outline: 0;
+     white-space: pre;
+     overflow-wrap: break-word;
+     hyphens: auto;
+     resize: vertical;
+     }
+
+  .Writing-Theme
+  .highlight-green { 
+    /* background-color: #;  */
+    color:#3A0077;
+    font-size: 1em;
+    font-family: inherit;
+    font-weight: inherit;
+    font-style: inherit;
+    line-height: 1.4em;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    white-space: pre;
+    word-wrap: break-word;
+    orphans: 2; /* Número mínimo de linhas no final do parágrafo */
+    widows: 2; /* Número mínimo de linhas no início do parágrafo */
+    hyphens: auto;
+    resize: vertical;
+    overflow-wrap: break-word;
+    hyphens: auto;
+    
+   
+  }
+
+  .Writing-Theme
+  .highlight-red { 
+    /* background-color: #f4a2f4; */
+    color:#FF7777;
+    font-size: 1em;
+    font-family: inherit;
+    line-height: 1.4em;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    white-space: pre;
+    overflow-wrap: break-word;
+    hyphens: auto;
+    resize: vertical;
+    
+  }
+
+   .Writing-Theme
+  .highlight-gray{
+    /* background-color: rgb(40, 42, 54);!important;
+    color: white; */
+    background-color:rgb(232, 222, 210) ;
+    color:rgb(5, 92, 233) ; 
+    font-size: 1em;
+    font-family: inherit;
+    font-weight: inherit;
+    font-style: inherit;
+    margin: 0;
+    padding: 0.1%;
+    border: 0;
+    /* border-radius: 2px; */
+    outline: 0;
+    white-space: pre;
+    overflow-wrap: break-word;
+    hyphens: auto;
+    resize: vertical;
+   } 
+
+  .Writing-Theme
+  #outputText {
+    background-color:#FFFCEA;
+    width:95%;
+    max-width: 2000px;
+    font-size: 1em;
+    font-weight: inherit;
+    font-style: inherit;
+    font-family: inherit;
+    line-height: inherit; /* Herda a altura de linha do textarea */
+    text-align: inherit; 
+    color: inherit;
+    margin: inherit;
+    padding: 5rem; /* Alterado o padding para 2rem */
+    border-radius: 10px;
+    border: 0;
+    outline: 0;
+    white-space: pre-wrap;
+    height: auto; /* Altura agora é ajustada automaticamente */
+    word-wrap: break-word;
+    resize: vertical;
+
+
+  } 
+
+  .Writing-Theme
+  .btn-theme{
+    padding: 6px;
+    background-color:rgb(245, 247, 250);
+    border-radius: 8px;
+    border: none;
+    color:blue;
+    font-size: 1em;
+    font-weight: 700;
+    box-shadow: 5px 5px 2px 1px rgba(0, 0, 0, 0.486);
+    cursor: pointer;
+  }
+  .Writing-Theme
+  .btn-theme:hover{
+    padding: 6px;
+    font-size: 1em;
+    background-color:blue;
+    color:rgb(245, 247, 250);
+  }
+  /*====Writing-Theme=========*/
+
+
+  /* =====Light-Green===== */
+
+  .Light-Green
+  .highlight-yellow { 
+    color:#333C83;  
+    font-size: 1em;
+    font-family: inherit;
+    font-weight: inherit;
+    font-style: inherit;
+    line-height: 1.4em;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    white-space: pre;
+    word-wrap: break-word;
+    overflow-wrap: anywhere;
+    hyphens: auto;
+    resize: vertical;
+  
+   }
+  
+   .Light-Green
+   .highlight-green { 
+      color:#4D96FF;
+      font-size: 1em;
+      font-family: inherit;
+      font-weight:inherit;
+      font-style: inherit;
+      line-height: 1.4em;
+      margin: 0;
+      padding: 0;
+      border: 0;
+      outline: 0;
+      white-space: pre;
+      word-wrap: break-word;
+      overflow-wrap: break-word;
+      hyphens: auto;
+      resize: vertical;
+      
+    }
+    .Light-Green
+    .highlight-red {
+       color: rgb(207, 62, 65);
+       font-size: 1em;
+       font-family: inherit;
+       font-weight: inherit;
+       font-style: inherit;
+       line-height: 1.4em;
+       margin: 0;
+       padding: 0;
+       border: 0;
+       outline: 0;
+       white-space: pre;
+       word-wrap: break-word;
+       overflow-wrap: break-word;
+       hyphens: auto;
+       resize: vertical;
+      
+    }
+
+  .Light-Green
+  .highlight-gray{
+    /* background-color: rgb(40, 42, 54);
+    color: white; */
+    background-color:rgb(44, 47, 52);
+    color:rgb(196, 248, 196) ;
+    font-size: 1em;
+    font-family: inherit;
+    font-weight: inherit;
+    font-style: inherit;
+    line-height: inherit;
+    margin: 0;
+    padding: 0.1%;
+    border: 0;
+    /* border-radius: 2px; */
+    outline: 0;
+    white-space: pre;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    hyphens: auto;
+    resize: vertical;
+   } 
+    .Light-Green
+    #outputText {
+      background-color:#B9F8D3;    
+      width:95%;
+      max-width: 2000px;
+      font-size: 1em;
+      font-weight: inherit;
+      font-style: inherit;
+      font-family: inherit;
+      line-height: inherit; /* Herda a altura de linha do textarea */
+      text-align: inherit; 
+      color: inherit;
+      margin: inherit;
+      padding: 5rem; /* Alterado o padding para 2rem */
+      border-radius: 10px;
+      border: 0;
+      outline: 0;
+      white-space: pre-wrap;
+      height: auto; /* Altura agora é ajustada automaticamente */
+      word-wrap: break-word;
+      resize: vertical;
+
+    }  
+
+    .Light-Green
+    .btn-theme{
+      padding: 6px;
+    }
+
+    .Light-Green
+    .btn-theme:hover{
+      padding: 5px;
+    }
+
+    .underline-Theme
+   .highlight-yellow {
+    color: #2F3A8F;
+    font-size: 1em;
+    font-family: inherit;
+    font-weight: inherit;
+    font-style: inherit;
+    text-align: inherit;
+    text-indent: inherit;
+    line-height: inherit;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    background-color: transparent;
+    white-space: pre;
+    overflow-wrap: break-word;
+    hyphens: auto;
+    
+  
+      
+    
+  
+     }
+
+   .underline-Theme
+   .highlight-green { 
+    color:#2F3A8F;
+    font-size: 1em;
+    font-family: inherit;
+    font-weight: inherit;
+    font-style: inherit;
+    text-align: inherit;
+    text-indent: inherit;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    text-decoration-line:underline ;
+    text-decoration-style:double ;
+    text-decoration-color:#2F3A8F ; /* Cor do sublinhado */
+    line-height: inherit;
+    background-color: transparent;
+    white-space: pre;
+    overflow-wrap: break-word;
+    hyphens: auto;
+  
+   
+    
+
+   
+  }
+
+  .underline-Theme
+  .highlight-red { 
+    font-size: 1em;
+    font-family: inherit;
+    font-weight: inherit;
+    font-style: inherit;
+    line-height: 1.4em;
+    text-align: center;
+    text-decoration: none;
+    text-indent: inherit;
+    padding: 0;
+    margin: 0;
+    /* padding: 0.1%; */
+    background-color: transparent;
+    white-space:pre;
+    overflow-wrap: break-word;
+    hyphens: auto;
+    color:red;
+    
+  }
+
+
+  .underline-Theme
+  .highlight-gray{ 
+    color: blue;
+    font-size: 1em;
+    font-family: inherit;
+    font-weight: inherit;
+    font-style: inherit;
+    text-indent:inherit;
+    margin: 0;
+    /* padding: 0; */
+    padding: 0.01%;
+    background-color: rgb(189, 180, 180);
+    white-space: pre;
+    overflow-wrap: break-word;
+    hyphens: auto;
+    
+    
+  }
+
+  .underline-Theme
+  #outputText {
+     background-color:#FEECE9;
+      width:95%;
+      max-width: 2000px;
+      font-size: 1em;
+      font-weight: inherit;
+      font-style: inherit;
+      font-family: inherit;
+      line-height: inherit; /* Herda a altura de linha do textarea */
+      text-align: inherit; 
+      color: inherit;
+      margin: inherit;
+      padding: 5rem; /* Alterado o padding para 2rem */
+      border-radius: 10px;
+      border: 0;
+      outline: 0;
+      white-space: pre-wrap;
+      height: auto; /* Altura agora é ajustada automaticamente */
+      word-wrap: break-word;
+      resize: vertical;
+  } 
+
+  .underline-Theme
+  .btn-theme{
+    padding: 6px;
+    background-color:black;
+    color: rgb(242, 245, 253);
+    border-radius: 8px;
+    border: none;
+    font-size: 1em;
+    font-weight: 700;
+    box-shadow: 5px 5px 2px 1px rgba(0, 0, 0, 0.486);
+    cursor: pointer;
+
+  }
+  .underline-Theme
+  .btn-theme:hover{
+    padding: 7px;
+    background-color:rgb(242, 245, 253);
+    color:black;
+  }
+
+  address{
+    display: flex;
+  }
+
+  .endereco span{
+    flex-direction: row;
+    justify-content: center;
+    font-family: 'Roboto',sans-serif;
+    color: #5bf303;
+    font-size: 1.3em;
+    font-weight: 600;
+    font-style: italic;
+  }
+  
+  .endereco .email{
+    font-family: 'Roboto',sans-serif;
+    color: red;
+    font-size: 1.3em;
+    font-weight: 600;
+  }
+  
+  
+  
+
+/* ====================================================================tamanho=mobili====*/
+/*======================================================================================*/
+/*============================================================================ final=== */
+
+/* inicio tamanho pequeno */
+@media screen and (max-width:567px){
+
+
+  body{
+    background-color: #89CFFD;
+    border-bottom: 3px solid black;
+    border-bottom-right-radius: 18%;
+    border-bottom-left-radius: 18%;
+  }
+  
+    img{
+      margin-right: auto;
+      margin-left: auto;
+      border-radius: 15px;
+      min-width: 300px;
+      width: 100%;
+      height: 90px;
+  }
+  
+   nav{
+    width: 100%;
+   }
+  
+    .titulo{
+    text-align: center;
+    justify-content: center;
+    padding: 20px;
+  
+    height: 60px;
+    background-color:#FFFF51;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 2em;
+    font-weight: 700;
+    color: #060eeb;
+    padding:5px ;
+    border-radius: 25px;
+    box-shadow: 10px 10px 5px 5px rgb(5, 245, 5);
+   
+  }
+  
+  #inputText{ 
+    font-size: 1.1em;
+    width: 100%;
+    max-width: 100vw;
+    /* padding-bottom: 40px; */
+  
+  }
+  
+   #inputText
+   .placeholder {
+    background-color: white;
+    color: rgb(13, 13, 237);
+    font-family: inherit;
+    font-size: 1em;
+    font-weight: inherit;
+    font-style: inherit;
+    text-align: center;
+    border: 0;
+    padding: 0; 
+    border-radius: 10px;
+    border-bottom: none;
+    width: 100%;
+    max-width: 100vw;
+    height: 40px;
+   
+  }
+  
+  #outputText {
+    position: relative;
+    width: 100%;
+    max-width: 100vw;
+    background-color: white;
+    font-size: 1em;
+    font-family: inherit;
+    font-style: inherit;
+    font-weight: inherit;
+    line-height: inherit;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    background-color: #0c0c0cd0;
+    white-space: pre-wap;
+   /* Defina um valor máximo para evitar que o conteúdo fique muito largo */
+    height: auto; /* A altura agora será ajustada automaticamente conforme o conteúdo */
+    resize:vertical;
+    
+  
+  }
+  
+  .botoes
+  .menu-completo
+  .format-text{
+      /* Defina o tamanho em pixels, mas também use uma unidade relativa */
+      width: 100%; /* 3% da largura do contêiner pai */
+  
+      /* Margens usando medidas relativas */
+      margin-right: 7%; /* 2% da largura do contêiner pai */
+      
+    
+      /* Outras propriedades */
+      border-radius: 10px;
+      /* padding: 0; */
+      background-color: #ADFF00;
+      color: #000;
+      font-size: .8em;
+      font-weight: 700;
+      cursor: pointer;
+  
+    filter: drop-shadow(0px 4px 4px rgba(0,00,0,0.2));
+    }
+  
+  .botoes
+  .menu-completo
+  .format-text:hover{
+    background-color: #FFFF51;
+    color: #035bf3;
+    border:3px solid #99FF99;
+    cursor: pointer;
+    }
+  
+    .botoes
+    .menu-completo
+    .btn-theme{
+      margin-left: auto;
+      margin-right: auto;
+  
+    }
+  
+  
+  .botoes {
+    /* Estilos iniciais da classe .botoes */
+    font-family: 'Open Sans', sans-serif;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-color: #1db2f2; /* Cor de fundo desejada */
+    border-radius: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
+  
+    padding: 0px;
+    margin-top: 0;
+    margin-bottom: 0;
+  
+    /* Outros estilos */
+    transition: none; /* Remova a transição para evitar flicker */
+  }
+  
+  .fixed{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+  
+  
+  
+  /* Aplicar uma transformação com transição a um dos elementos */
+  .element1 {
+    transform: rotate(0deg); /* Comece sem rotação */
+    transition: transform 0.4s ease; /* Tempo da transição */
+  }
+  
+  /* Quando um evento (por exemplo, clique) ocorre, aplique a transformação desejada */
+  .element1:hover {
+    transform: rotate(45deg); /* Rotação de 45 graus ao passar o mouse */
+  }
+  
+  
+  
+  .botoes.fixed {
+    /* Estilos quando a classe .botoes está fixa no topo */
+    position: fixed;
+    padding-top: 0;
+    padding-bottom: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    /* Outros estilos */
+    transition: all 0.3s ease; /* Adicione uma transição suave */
+  }
+  
+  
+    .botao-reset{
+      width: 20%;
+      height: 20%;
+      margin-left: .5rem;
+      margin-right: .5rem;
+      padding: .5rem;
+      text-align: center;
+      background-color: #000;
+      border-radius: 50%;
+      border: 2px solid blue;
+      color: #060eeb;
+      font-size: 1em;
+      font-weight: 700;
+      box-shadow: 5px 5px 2px 1px rgba(0, 0, 0, 0.486);
+      cursor: pointer;
+      transition: 0.5s ease-in-out;
+  
+    }
+    
+    .botao-reset:hover{
+      width: 25%;
+      height: 25%;
+      font-size: 1em;
+      background-color: red;
+      color: #fff;
+      border: 2px solid white;
+    }
+  
+
+footer{
+  display: flex;
+  height: 200px;
+}
+footer div{
+  margin-top: 40px;
+ 
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+
+}
+
+footer h2{
+  border-bottom: 3px solid black;
+  /* border-bottom-right-radius: 30%; */
+  border-bottom-left-radius: 30%;
+}
+
+footer address{
+  margin-top: 5px;
+  padding-bottom: 20px;
+}
+
+footer a{
+  margin-left: 10px;
+  font-family: 'Roboto',sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+  .fixed{
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+    
+  .botoes{   
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  } 
+
+  .menu-completo{
+    display: flex;
+    justify-content:space-between;  
+    align-items: center;
+  }
+
+    .btn-theme{
+      width: 100%;
+      height: 100%;
+      max-width: 80px;
+      max-height: 100px;
+      color: rgb(43, 0, 255);
+      box-shadow: 2px 3px 5px rgb(255, 255, 255);
+      font-size: .9em;
+      font-family: 'Roboto';
+      padding: 13px;
+      
+    }
+
+    .btn-theme:hover{
+      color: rgb(247, 235, 3);
+      box-shadow: 2px 3px 5px rgb(73, 244, 6);
+      padding: 15px;
+    }
+
+    .botao-posicionado {
+      display: block; /* Exibe o botão apenas em dispositivos móveis */
+      margin: auto;
+    }
+    .btnmenudropdown{
+      display: none;
+    }
+    .card1,
+    .card2,
+    .card3{
+      display: none;
+    }
+
+    .menudropdow{
+      width: 20px;
+      display:inline-block;
+    
+    }
+    .btnmenudropdown{
+      width: 50%;
+      background-color:#2505f8 ;
+      color: #f0f1f9;
+      display: flex;
+      flex-direction: row;
+      padding: 20px;
+      text-align: center;
+      font-size: .8em;
+      font-weight: 700;
+      border-radius: 8px;
+      border:1px solid white;
+      /* border-radius:20.5px; */
+   
+    }
+    .botao-posicionado{
+      position: relative;
+      top: 127px;
+      left: 50px;
+    }
+    
+    .menudropdow-conteudo{
+      width: 100px;
+      text-align: center;
+      font-size: 1em;
+      margin-top: 8%;
+      margin-left: -55px;
+      border-radius: 8px;
+      display: none; 
+      position: absolute;
+      background-color: #fff;
+      min-width: 10px;
+      box-shadow: 0px 8px 16px 10px rgba(16, 15, 15, 0.763);
+      z-index: 1;
+    }
+    
+    .menudropdow-conteudo a{
+      color: #000;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+    }
+    
+    .menudropdow-conteudo a:hover{
+      background-color:#ddd;
+      border-radius: 8px;
+    }
+    
+    .mostrarMenuDropdown{
+      display: block;
+    }
+    
+    .menudropdow:hover .btnmenudropdown{
+      background-color: rgb(153, 252, 4);
+      color: #000;
+      border-radius: 20.6px;
+      border-left: 115px;
+      border: solid 2px yellow;
+    }
+    .card1{
+      width: 80px;
+      height: 80px;
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      justify-content: center;
+      border-radius: 8px;
+     
+    
+    }
+    .card2{
+      height: 80px;
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      justify-content: center;
+      border-radius: 8px;
+     
+    }
+    
+    .card-text{
+      color: #000;
+      
+      font-size: 10px;
+      display: flex;
+      flex-direction: column;
+    }
+    
+    }
+
+    /*IMAGENS COPIADAS*/
+
+    /* Estilos para imagens copiadas */
+    .imagem-copiada {
+      max-width: 100%;
+      height: auto;
+      margin-bottom: 10px; /* Adiciona espaço entre as imagens */
+  }
+
+  /* Estilizando o botão de voz */
+#button {
+  background-color: #007bff; /* Cor de fundo */
+  color: #fff; /* Cor do texto */
+  border: none; /* Removendo a borda */
+  padding: 10px 20px; /* Espaçamento interno */
+  cursor: pointer; /* Cursor ao passar por cima */
+  border-radius: 5px; /* Borda arredondada */
+}
+
+#button:hover {
+  background-color: #0056b3; /* Cor de fundo ao passar o mouse */
+}
+
+/* Estilizando o seletor de voz */
+#voz {
+  width: 100%; /* Largura total */
+  padding: 10px; /* Espaçamento interno */
+  border-radius: 5px; /* Borda arredondada */
+}
+
+/* Estilizando o elemento de áudio */
+#audio {
+  width: 100%; /* Largura total */
+  margin-top: 10px; /* Margem superior */
+}
+
+
+/*GRAVADOR DE VOZ*/
+
+.holder{
+  width: 30vw;
+  max-width: 150px;
+  height:5rem;
+  background-color: #4c474c;
+  background-image: linear-gradient(0deg,#4c474c 0%,#141414 100%);
+  border-radius: 50px;
+}
+
+.holder .title{
+  font-size: 1em;
+  color: #fff;
+  text-align: center;
+}
+
+[data-role="controls"] > button {
+  margin: 20px auto;
+  outline: none;
+  display: block;
+  border: none;
+  background-color: #d9afd9;
+  background-image: linear-gradient(0deg, #d9afd9 0%, #97d9e1 100%);
+  width: 75px;
+  height: 75px;
+  border-radius: 50%;
+  border: 20px solid #fff;
+  text-indent: -30em;
+  cursor: pointer;
+  box-shadow: 0px 5px 2px rgba(0, 0, 0, 0.3) inset,
+              0px 0px 30px #fff,
+              0px 0px 35px #333;
+}
+
+[data-role="controls"] > button:hover {
+  background-color: #ee7bee;
+  background-image: linear-gradient(0deg, #ee7bee 0%, #6fe1f5 100%);
+}
+
+
+/* Corrigido o seletor para indicar que é um atributo de button */
+[data-role="controls"] > button[data-recording="true"] {
+  background-color: #ff2033;
+  background-image: linear-gradient(0deg, #ff2033 0%, #b30003 100%);
+}
+
+[data-role="recordings"] > .row {
+  width: auto;
+  height: auto;
+  padding: 10px;
+  display: block;
+}
+
+[data-role="recordings"] > .row > audio {
+  outline: none;
+}
+
+[data-role="recordings"] > .row > a {
+  display: inline-block;
+  text-align: center;
+  font-size:  1em;
+  line-height: 25px;
+  vertical-align: middle;
+  width: 50px;
+  height: 50px;
+  border-radius: 20px;
+  color: #fff;
+  font-weight: bold;
+  text-decoration: underline;
+  background-color: #0093e9;
+  background-image: linear-gradient(0deg, #0093e9 0%, #80d0c7 100%);
+  /* Corrigido de "linear-gradiente" para "linear-gradient" */
+  /* float: right; */
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+[data-role="recordings"] > .row > a:hover {
+  text-decoration: none;
+}
+
+[data-role="recordings"] > .row > a:active {
+  background-image: linear-gradient(180deg, #0093e9 0%, #80d0c7 100%);
+  /* Corrigido de "linear-gradiente" para "linear-gradient" */
+}
+

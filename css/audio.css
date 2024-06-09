@@ -1,0 +1,95 @@
+
+
+.topo-site{
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 30px;
+  align-items: center;
+}
+
+.topo-site a{
+  margin-right: 20px;
+  color: rgba(0, 0, 0, 0.87);
+  font-size: 15px;
+  text-decoration: none;
+}
+
+.topo-site a:hover{
+  text-decoration: underline;
+}
+
+.topo-direito{
+  display: flex;
+  align-items: center;
+  min-height: 13vw;
+  justify-content: space-between;
+}
+
+
+
+.topo-direito .topo_apps{
+  margin-right: 10px;
+}
+
+
+.corpo-do-site{
+  flex: 1;
+  display: flex;
+  margin-top: 12%;
+  flex-direction: column;
+}
+
+.corpo-do-site img{
+  object-fit: contain;
+  height: 100px;
+}
+ .busca_campo{
+  display: flex;
+  align-items: center;
+  border: 1px solid lightgray;
+  border-radius: 999px;
+  height: 30px;
+  width: 75vw;
+  padding: 10px 20px;
+  margin: 0 auto;
+  margin-top: 40px;
+  max-width: 560px;
+}
+
+.busca_campo input{
+  flex:1;
+  padding: 10px 20px;
+  border: none;
+  outline: none;
+}
+
+.busca_campo .material-icons{
+  color: gray;
+  
+  
+}
+
+
+
+.busca_btns{
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+}
+
+.busca_btns button{
+  margin: 5px;
+  padding: 10px 15px;
+  background-color:#f8f8f8;
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+
+#btn{
+  cursor: pointer;
+}
+
+#btn.paused {
+  color: red; /* Cor do ícone do microfone quando pausado */
+}
