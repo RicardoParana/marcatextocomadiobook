@@ -2,8 +2,24 @@
 
 // Seleciona os elementos do DOM
 let inputText = document.querySelector('#inputText');
-let voz = document.querySelector('#voz');
+let voz = document.querySelector('#voices');
 let button = document.querySelector('#button');
+
+let textarea = document.getElementById('textarea');
+let voices = document.getElementById('voices');
+let selectedVoice = 0;
+const readButton = document.getElementById('button');
+let playButton = document.getElementById('playButton');
+let pauseButton = document.getElementById('pauseButton');
+let resumeButton = document.getElementById('resumeButton');
+let resetButton = document.getElementById('resetButton');
+let generalResetButton = document.getElementById('generalResetButton');
+let prevButton = document.getElementById('prevButton');
+let nextButton = document.getElementById('nextButton');
+let output = document.getElementById('output');
+let rate = document.getElementById('rate');
+let paragraphs = [];
+let currentParagraphIndex = 0;
 
 // Inicializa a variável selecionaVoz
 let selecionaVoz = 0;
